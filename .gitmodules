@@ -1,0 +1,6 @@
+[submodule "gir"]
+	path = gir
+	url = git@github.com:gtk-rs/gir.git
+	update = none
+[submodule "./gir"]
+	branch = master
