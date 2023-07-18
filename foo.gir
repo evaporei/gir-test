@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="GObject" version="2.0"/>
+  <package name="gobject-2.0"/>
+  <namespace name="Foo"
+             shared-library="libfoo.so"
+             c:identifier-prefixes="Foo"
+             c:symbol-prefixes="foo">
+    <class name="Double"
+           c:symbol-prefix="double"
+           c:type="FooDouble"
+           parent="GObject.Object"
+           glib:type-name="FooDouble"
+           glib:get-type="foo_double_get_type"
+           glib:type-struct="DoubleClass">
+      <source-position filename="foo_double.h" line="7"/>
+      <constructor name="new" c:identifier="foo_double_new">
+        <source-position filename="foo_double.h" line="13"/>
+        <return-value transfer-ownership="full">
+          <type name="Double" c:type="FooDouble*"/>
+        </return-value>
+        <parameters>
+          <parameter name="value" transfer-ownership="none">
+            <type name="gdouble" c:type="double"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <method name="add" c:identifier="foo_double_add">
+        <source-position filename="foo_double.h" line="15"/>
+        <return-value transfer-ownership="full">
+          <type name="Double" c:type="FooDouble*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="self" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </instance-parameter>
+          <parameter name="other" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="div" c:identifier="foo_double_div">
+        <source-position filename="foo_double.h" line="21"/>
+        <return-value transfer-ownership="full">
+          <type name="Double" c:type="FooDouble*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="self" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </instance-parameter>
+          <parameter name="other" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_value" c:identifier="foo_double_get_value">
+        <source-position filename="foo_double.h" line="9"/>
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="d" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </instance-parameter>
+          <parameter name="value" transfer-ownership="none">
+            <type name="gdouble" c:type="double*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="inv" c:identifier="foo_double_inv">
+        <source-position filename="foo_double.h" line="23"/>
+        <return-value transfer-ownership="full">
+          <type name="Double" c:type="FooDouble*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="self" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="mul" c:identifier="foo_double_mul">
+        <source-position filename="foo_double.h" line="19"/>
+        <return-value transfer-ownership="full">
+          <type name="Double" c:type="FooDouble*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="self" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </instance-parameter>
+          <parameter name="other" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_value" c:identifier="foo_double_set_value">
+        <source-position filename="foo_double.h" line="11"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="d" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </instance-parameter>
+          <parameter name="value" transfer-ownership="none">
+            <type name="gdouble" c:type="double"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="sub" c:identifier="foo_double_sub">
+        <source-position filename="foo_double.h" line="17"/>
+        <return-value transfer-ownership="full">
+          <type name="Double" c:type="FooDouble*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="self" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </instance-parameter>
+          <parameter name="other" transfer-ownership="none">
+            <type name="Double" c:type="FooDouble*"/>
+          </parameter>
+        </parameters>
+      </method>
+    </class>
+    <record name="DoubleClass"
+            c:type="FooDoubleClass"
+            glib:is-gtype-struct-for="Double">
+      <source-position filename="foo_double.h" line="7"/>
+      <field name="parent_class">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+    </record>
+  </namespace>
+</repository>
